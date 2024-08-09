@@ -35,7 +35,7 @@ async function run(): Promise<void> {
     } else {
       let installLibfuse2 = core.getBooleanInput("install-libfuse2");
       if (installLibfuse2) {
-        await exec.exec("sudo", ["apt-get", "install", "-y", "libfuse2"]);
+        await exec.exec("sudo", ["apt-get", "install", "-y", "libfuse2", "ghostscript"]);
       }
 
       const binPath = `${os.homedir}/bin`;
