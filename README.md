@@ -15,6 +15,6 @@ This action downloads the latest ImageMagick binary and adds it to the PATH.
 
 ```yaml
 steps:
-  - uses: mfinelli/setup-imagemagick@v5
-  - run: magick input.jpg -resize 100x100 output.jpg
+  - uses: mfinelli/setup-imagemagick@v5mod1
+  - run: magick input.pdf -resize 100x100 output.jpg
 ```
